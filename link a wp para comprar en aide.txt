@@ -1,0 +1,67 @@
+<a href="https://wa.me/543816228261?text=Hola,%20me%20gustaria%20comprar%20*POR%20MAYOR*%20el%20producto:%20**>COMPRAR</a>
+
+
+
+<a href="https://wa.me/543816228261?text=Hola,%20me%20gustaria%20comprar%20POR%20MENOR%20el%20producto:%20>COMPRAR</a>
+
+
+
+Hola, me gustaria comprar POR MAYOR el producto: dinosaurio super gigante cod JD1
+
+
+
+
+
+<div class="grid-de-productos3">
+        <div class="productos"><img src="Productos/Producto.png"></div><!-- IMAGEN PRIMERA COLUMNA-->
+        <div class="productos"><img src="Productos/Producto.png"></div><!-- IMAGEN SEGUNDA COLUMNA-->
+        <div class="productos">Descripcion del producto en el cual puede ser vizualizado arriba. Descripcion del producto en el cual puede ser vizualizado arriba</div><!--DESCRIPCION PRIMERA COLUMNA-->
+        <div class="productos">Descripcion del producto en el cual puede ser vizualizado arriba. Descripcion del producto en el cual puede ser vizualizado arriba</div><!--DESCRIPCION SEGUNDA COLUMNA-->
+        <div class="productos">$199,99 <h6>por mayor</h6></div><!--PRECIO PRIMERA COLUMNA-->
+        <div class="productos">$199,99 <h6>por mayor</h6></div><!--PRECIO SEGUNDA COLUMNA-->
+        <div class="productos">COMPRAR</div><!--COMPRAR PRIMERA COLUMNA-->
+        <div class="productos">COMPRAR</div><!--COMPRAR SEGUNDA COLUMNA-->
+        <div class="productos">$199,99 <h6>por menor</h6></div><!--PRECIO PRIMERA COLUMNA-->
+        <div class="productos">$199,99 <h6>por menor</h6></div><!--PRECIO SEGUNDA COLUMNA-->
+        <div class="productos">COMPRAR</div><!--COMPRAR PRIMERA COLUMNA-->
+        <div class="productos">COMPRAR</div><!--COMPRAR SEGUNDA COLUMNA-->
+    </div>
+
+
+
+
+
+
+
+<div class="consultas"><h6><a href="https://wa.me/543816228261?text=Me%20gustaria%20realizar%20una%20consulta">Consultas</a></h6></div>
+
+
+
+
+
+.consultas{
+    display: inline-block;
+    color: #f1b3b3;
+    font-size: 63px;
+    text-align: center;
+    
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    height: 85px;
+    width: 285px;
+    position:relative; left:75% ;
+    position:relative; top:80% ;
+    position: fixed;
+    background-color:#c1e0e0d8;
+    font-family:sans-serif;
+    
+
+    
+}
+h6{
+    padding: 18px;
+    padding-left: 1px;
+    opacity: 1;
+    -webkit-text-stroke: 1px #b38c8c;
+   
+}

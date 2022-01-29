@@ -1,0 +1,394 @@
+:root{
+    --azul:      #499EBF;
+    --turquesa:  #e5f7f7;
+    --amarillo:  #F2C879;
+    --naranja:   #F29966;
+    --rojo:      #F28177;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: var(--turquesa);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 5px 0px 12px 0px rgba(0, 0, 0, 0.253);
+    z-index: 1000;
+
+}
+.logo{
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+section{
+    width: 100%;
+    height: 200px;
+    transform: translateY(30%);
+}
+.fondo{
+    width: 100%;
+    height: 200px;
+    background-image: url(imagenes/fondo\ titulo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-500%);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: var(--turquesa);
+}
+h3{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-750%);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    color: var(--turquesa);
+}
+.h4{
+    transform: translate(0%, -340%);
+    background-color: rgb(255, 67, 67);
+    display: block;
+    opacity: .5;
+}
+@keyframes sliderCM{
+    0% {
+        position:relative;
+         text-align: right;}
+    50% {text-align: center;}
+    100% {text-align: left;}
+}
+h4{
+    font-family: 'Fjalla one', sans-serif;
+    transform: translate(0, 0);
+    padding: 2px;
+    padding-bottom: 0px;
+    font-size: 10px;
+    color: rgb(253, 253, 90);
+    letter-spacing: 2px;
+    animation-name: sliderCM;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.logoWP{
+    width: 12%;
+    height: 12%;
+    display: flex;
+    position: fixed;
+    z-index: 800;
+    transform: translate(85vw, 60vh);
+    filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.200));
+}
+h5{
+    text-align: center;
+    transform: translateY(850%);
+    font-size: 10px;
+    color: rgba(82, 82, 82, 0.849);
+}
+a {text-decoration-line: none;}
+.bazar a{
+      color: rgba(255, 255, 255, 0.600);
+      -webkit-text-stroke: 1px var(--amarillo);
+}
+.juguete a{
+    color: rgba(255, 255, 255, 0.600);
+    -webkit-text-stroke: 1px var(--naranja);
+}
+.navidad a{
+    color: rgba(255, 255, 255, 0.600);
+    -webkit-text-stroke: 1px var(--rojo);
+}
+.bazarPadre{
+    margin: 5%;
+    margin-top: 120px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: url(imagenes/portada\ bazar.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+    
+}
+.bazarPadre:hover{
+    box-shadow: 0px 3px 5px 0 rgb(88, 88, 88);
+}
+.bazar:hover{
+    font-size: 50px;
+}
+.bazar{
+    align-self: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+.juguetePadre{
+    margin: 5%;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: url(imagenes/portada\ juguete.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+}
+.juguetePadre:hover{
+    box-shadow: 0px 3px 5px 0 rgb(88, 88, 88);
+}
+.juguete:hover{
+    font-size: 50px;
+}
+.juguete{
+    align-self: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+.navidadPadre{
+    margin: 5%;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: url(imagenes/portada\ navidad.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+}
+.navidadPadre:hover{
+    box-shadow: 0px 3px 5px 0 rgb(88, 88, 88);
+}
+.navidad:hover{
+    font-size: 50px;
+}
+.navidad{
+    align-self: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--turquesa);
+    color: rgba(82, 82, 82, 0.849);
+    transform: translateY(200%);
+    box-shadow: 0 -1px 5px 0px rgba(177, 177, 177, 0.76);
+    z-index: 900;
+}
+.gridFooter{
+    display: grid;
+    grid-template-rows:repeat(1 100%);
+    grid-template-rows: repeat(4 10px);
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.ubicacion{
+    margin-top: 40px;
+}
+.derechos{
+    margin-top: 25px;
+}
+.desarrollado{
+    margin-top: 25px;
+}
+.nombre{
+    margin-top: 5px;
+}
+
+                   
+
+            /* RESSPONSIVE DESIGN HORIZONTAL*/
+
+@media screen and (min-width:320px){
+    header{
+        height: 10%;
+    }
+    .logoWP{
+        transform: translate(85vw, 50vh);
+    }
+}
+@media screen and (min-width:375px){
+    .logo{
+        width: 25%;
+    }
+    header{
+        height: 8%;
+    }
+}
+@media screen and (min-width:425px){
+    .logo{
+        width: 20%;
+    }
+    .logoWP{
+        width: 10%;
+        height: 10%;
+        transform: translate(85vw, 50vh);
+    }
+}
+@media screen and (min-width:550px){
+    header{
+        height: 12%;
+    }
+    .logo{
+        width: 20%;
+    }
+    section{
+        height: 240px;
+    }
+    .fondo{
+        height: 240px;
+    }
+    .logoWP{
+        transform: translate(85vw, 40vh);
+    }
+}
+@media screen and (min-width:650px){
+    .logo{
+        width: 18%;
+    }
+    .logoWP{
+        width: 8%;
+        height: 8%;
+        transform: translate(90vw, 45vh);
+    }
+    section{
+        height: 240px;
+    }
+    .fondo{
+        height: 240px;
+    }
+    .bazarPadre{
+        margin: 20%;
+        margin-top: 120px;
+    }
+    .juguetePadre{
+        margin: 20%;
+        margin-top: -18%;
+    }
+    .navidadPadre{
+        margin: 20%;
+        margin-top: -18%;
+    }
+}
+@media screen and (min-width:768px){
+    .logo{
+        width: 15%;
+    }
+    .logoWP{
+        width: 6%;
+        height: 6%;
+        transform: translate(90vw, 45vh);
+    }
+    .bazarPadre{
+        margin: 20%;
+        margin-top: 120px;
+    }
+    .juguetePadre{
+        margin: 20%;
+        margin-top: -18%;
+    }
+    .navidadPadre{
+        margin: 20%;
+        margin-top: -18%;
+    }
+}
+@media screen and (min-width:900px){
+    .logo{
+        width: 12%;
+    }
+    .logoWP{
+        transform: translate(90vw, 45vh);
+    }
+}
+@media screen and (min-width:1024px){
+    header{
+        height: 9%;
+    }
+    .logo{
+        width: 7%;
+    }
+    section{
+        width: 100%;
+        height: 290px;
+        transform: translateY(16%);
+    }
+    .fondo{
+        width: 100%;
+        height: 290px;
+    }
+    .logoWP{
+        width: 4%;
+        height: 4%;
+        transform: translate(93vw, 35vh);
+    }
+    h2{
+        transform: translateY(-450%);
+        font-size: 40px;
+    }
+    h3{
+        transform: translateY(-750%);
+        font-size: 23px;
+    }
+    .h4{
+        transform: translate(0%, -380%);
+    }
+    h4{
+        font-size: 15px;
+    }
+    h5{
+        transform: translateY(550%);
+        font-size: 14px;
+        color: rgba(82, 82, 82, 0.849);
+    }
+    .bazarPadre{
+        margin: 30%;
+        margin-top: 120px;
+    }
+    .juguetePadre{
+        margin: 30%;
+        margin-top: -28%;
+    }
+    .navidadPadre{
+        margin: 30%;
+        margin-top: -28%;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    header{
+        height: 10%;
+    }
+    .logoWP{
+        
+        transform: translate(91vw, 38vh);
+    }
+}
+
+
+        /* RESSPONSIVE DESIGN VERTICAL */
+
+
+@media screen and (min-height:1px){
+    header{
+        height: 60px;
+    }
+}
+@media screen and (min-height:500px){
+    header{
+        height: 60px;
+    }
+}

@@ -1,0 +1,505 @@
+:root{
+    --azul:      #499EBF;
+    --turquesa:  #e5f7f7;
+    --amarillo:  #F2C879;
+    --naranja:   #F29966;
+    --rojo:      #F28177;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: var(--turquesa);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 5px 0px 12px 0px rgba(0, 0, 0, 0.253);
+    z-index: 1000;
+
+}
+.logo{
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.menu{
+    width: 7%;
+    align-self: flex-end;
+    transform: translateX(-850%);
+    font-size: 30px;
+    color:rgba(82, 82, 82, 0.849);
+}
+@keyframes menu{
+    0%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes subListas{
+    0%{
+        transform: translateY(-50%);
+    }
+}
+
+.subMenu{
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.300);
+    background-color: var(--turquesa);
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+    transform: translateX(-10px);
+    display: none;
+}
+.menu:hover .subMenu{
+    display: block;
+    animation-name: menu;
+    animation-duration: .5s;
+}
+ul{
+    list-style: none;
+    color: var(--turquesa);
+}
+li{
+    user-select: none;
+}
+.lista{
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.lista li{
+    margin-bottom: 15px;
+}
+.inicio{
+    color: rgb(119, 119, 119);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+}
+.inicio a{
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+.bazar{
+    color: var(--amarillo);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+}
+.bazar a{
+    color: var(--amarillo);
+    text-decoration: none;
+}
+.juguetes{
+    color: var(--naranja);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+}
+.juguetes a{
+    color: var(--naranja);
+    text-decoration: none;
+}
+.navidad{
+    color: var(--rojo);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+}
+.navidad a{
+    color: var(--rojo);
+    text-decoration: none;
+}
+
+.logoWP{
+    width: 12%;
+    height: 12%;
+    display: flex;
+    position: fixed;
+    z-index: 800;
+    transform: translate(85vw, 85vh);
+    filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.200));
+}
+
+.vacio{
+    width: 100vw;
+    height: 25vh;
+    transform: translateY(25vh);
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+
+section{
+    width: 120px;
+    height: 25px;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.849);
+    display: flex;
+    transform: translate(60vw, 70px);
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    user-select: none;
+    z-index: 560;
+    position: fixed;
+    
+}
+.categorias{
+    margin-left: 15px;
+    color:rgba(82, 82, 82, 0.849);
+}
+.categorias:hover{
+    cursor: pointer;
+}
+
+.flecha{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    margin-top: 5px;
+    opacity: .5;
+}
+.categoriaJuguetes{
+    width: 100vw;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: var(--turquesa);
+    position: absolute;
+    transform: translate(-60%,-20px);
+    display: none;
+    margin-top: 10px;
+    
+}
+.categoriaJuguetes li{
+    margin: 20px;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.329);
+}
+.categoriaJuguetes li a{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.cerrarCategorias{
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+    padding: 3px;
+    padding-right: 9px;
+    padding-left: 9px;
+    margin: 5px;
+    margin-top: 15px;
+    border-radius: 100px;
+    border: 1px solid rgba(82, 82, 82, 0.329);
+
+}
+.cerrarCategorias:hover{
+    background-color: rgba(82, 82, 82, 0.329);
+    cursor: pointer;
+}
+
+@keyframes categoriasFrame{
+    0%{
+        transform: translatex(100vw, 70px);
+    }
+}
+/* section:hover .categoriaJuguetes{
+    display: block;
+    animation-name: categoriasFrame;
+    animation-duration: .5;
+} */
+
+
+
+
+
+/* PRODUCTOS */
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorProductos{
+    width: 200px;
+    /* height: 400px; */
+    box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.200);
+    margin: 1px;
+    transform: translate(0, 100px);
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+/* .contenedorProductos img{
+   
+} */
+.descripcion{
+    margin-bottom: 5px;
+    color:rgba(82, 82, 82, 0.849);
+    user-select: none;
+}
+.precioMayor, .precioMenor{
+    display: flex;
+    text-align: center;
+    margin-left: 65px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color:rgb(82, 82, 82);
+    user-select: none;
+}
+h5{
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comprar{
+    background-color: #aceeee;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.comprar:hover{
+    background-color: var(--rojo);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.comprar a{
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(59, 59, 59);
+}
+
+.contenedorProductos .a:hover{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+}
+
+.sinStock{
+    color: rgb(255, 111, 111);
+}
+
+
+
+
+
+
+
+
+            /* RESSPONSIVE DESIGN HORIZONTAL*/
+
+            @media screen and (min-width:320px){
+                header{
+                    height: 10%;
+                }
+            }
+            @media screen and (min-width:375px){
+                .logo{
+                    width: 25%;
+                }
+                header{
+                    height: 8%;
+                }
+                .menu{
+                    transform: translateX(-820%);
+                }
+            }
+            @media screen and (min-width:425px){
+                .logo{
+                    width: 20%;
+                }
+                .logoWP{
+                    width: 10%;
+                    height: 10%;
+                    transform: translate(85vw, 85vh);
+                }
+                .menu{
+                    width: 6%;
+                    transform: translateX(-920%);
+                }
+            }
+            @media screen and (min-width:550px){
+                header{
+                    height: 12%;
+                }
+                .logo{
+                    width: 20%;
+                }
+                .menu{
+                    width: 5%;
+                    align-self: flex-end;
+                    transform: translateX(-1120%);
+                }
+                .logoWP{
+                    transform: translate(85vw, 85vh);
+                }
+            }
+            @media screen and (min-width:650px){
+                .logo{
+                    width: 18%;
+                }
+                .logoWP{
+                    width: 8%;
+                    height: 8%;
+                    transform: translate(85vw, 85vh);
+                }
+                .bazarPadre{
+                    margin: 20%;
+                    margin-top: 120px;
+                }
+                .juguetePadre{
+                    margin: 20%;
+                    margin-top: -18%;
+                }
+                .navidadPadre{
+                    margin: 20%;
+                    margin-top: -18%;
+                }
+                .menu{
+                    width: 4%;
+                    transform: translateX(-1400%);
+                }
+            }
+            @media screen and (min-width:768px){
+                .logo{
+                    width: 15%;
+                }
+                .logoWP{
+                    width: 6%;
+                    height: 6%;
+                    transform: translate(85vw, 85vh);
+                }
+                .bazarPadre{
+                    margin: 20%;
+                    margin-top: 120px;
+                }
+                .juguetePadre{
+                    margin: 20%;
+                    margin-top: -18%;
+                }
+                .navidadPadre{
+                    margin: 20%;
+                    margin-top: -18%;
+                }
+                .menu{
+                    width: 4%;
+                    transform: translateX(-1350%);
+                }
+            }
+            @media screen and (min-width:900px){
+                .logo{
+                    width: 12%;
+                }
+                .menu{
+                    width: 4%;
+                    transform: translateX(-1320%);
+                }
+                .logoWP{
+                    transform: translate(85vw, 85vh);
+                }
+            }
+            @media screen and (min-width:1024px){
+                header{
+                    height: 9%;
+                }
+                .logo{
+                    width: 7%;
+                }
+                .logoWP{
+                    width: 4%;
+                    height: 4%;
+                    transform: translate(93vw, 85vh);
+                }
+                .bazarPadre{
+                    margin: 30%;
+                    margin-top: 120px;
+                }
+                .juguetePadre{
+                    margin: 30%;
+                    margin-top: -28%;
+                }
+                .navidadPadre{
+                    margin: 30%;
+                    margin-top: -28%;
+                }
+                .menu{
+                    width: 2%;
+                    transform: translateX(-2550%);
+                }
+                
+            }
+            @media screen and (min-width:1200px){
+                header{
+                    height: 10%;
+                }
+            }
+            
+            
+                    /* RESSPONSIVE DESIGN VERTICAL */
+            
+            
+            @media screen and (min-height:1px){
+                header{
+                    height: 60px;
+                }
+            }
+            @media screen and (min-height:500px){
+                header{
+                    height: 60px;
+                }
+            }
+            
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--turquesa);
+    color: rgba(82, 82, 82, 0.849);
+    transform: translateY(200%);
+    box-shadow: 0 -1px 5px 0px rgba(177, 177, 177, 0.76);
+    z-index: 900;
+}
+.gridFooter{
+    display: grid;
+    grid-template-rows:repeat(1 100%);
+    grid-template-rows: repeat(4 10px);
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.ubicacion{
+    margin-top: 40px;
+}
+.derechos{
+    margin-top: 25px;
+}
+.desarrollado{
+    margin-top: 25px;
+}
+.nombre{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
