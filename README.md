@@ -1,0 +1,1 @@
+Aide Tienda. Web para mostrar diferentes categorias de productos de temporadas con su respectivos precios, con boton de comprar que los clientes seran dirigidos a whatsapp para finalizar su compra y ponerse de acuerdo para el punto de encuentro.
